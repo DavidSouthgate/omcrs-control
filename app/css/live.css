@@ -1,0 +1,158 @@
+body {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    -webkit-app-region: drag;
+    user-select: none;
+    font-family: sans-serif;
+    overflow:hidden;
+}
+
+button, a:hover{
+    color: #ffb949;
+    text-decoration: none;
+}
+
+.display-none {
+    display: none;
+}
+
+.not-active {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
+    -webkit-app-region: drag;
+}
+
+button, a, select {
+    -webkit-app-region: no-drag;
+}
+
+a {
+    outline: 0;
+    text-decoration: none;
+}
+
+.view {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+    padding-right: 20px;
+}
+
+.view.expanded {
+    min-width: 925px;
+}
+
+.view.compact {
+    min-width: 425px;
+}
+
+.view.compact.expanded {
+    min-width: 535px;
+}
+
+    .view .logo-container {
+        float: left;
+        margin-right: 10px;
+        display: none;
+    }
+
+    .view.compact .logo-container {
+        display: none!important;
+    }
+
+    .view .logo-container img {
+        height: 70px;
+    }
+
+    .view .question-container {
+        width: 320px;
+        height: 70px;
+        position: relative;
+        float: left;
+    }
+
+    .view.compact .question-container {
+        display: none;
+    }
+
+    .view .question-container .question {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: table;
+    }
+
+    .view .question-container .question p {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .view .button-container {
+        float: left;
+        height: 70px;
+        line-height: 70px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    .view .button-container.session-identifier { /* results icon*/
+        font-size: 20px;
+    }
+
+    .view .button-container.icon { /* results icon*/
+        font-size: 30px;
+    }
+
+    .view .button-container.nav { /*navigation arrows */
+        font-size: 40px;
+    }
+
+    .view .button-container.session-identifier{
+        width: 55px;
+    }
+
+    .view .button-container.activate { /* Status text */
+        font-size: 20px;
+        width: 100px;
+    }
+
+    .view .button-container.new-question { /*add question icon*/
+        font-size: 30px;
+    }
+
+    .view #question-type {
+        vertical-align: middle;
+        margin-bottom: 3px;
+    }
+
+    .view .button-container.question-type select { /*drop down menu*/
+        width: 110px;
+        height: 25px;
+        clear: both;
+    }
+
+    .view .button-container.new-question-submit{ /*submit new question icon*/
+        font-size: 30px;
+        float: right;
+    }
+
+    .view .button-container.users {
+        font-size: 22px;
+    }
+
+    .view .button-container.power {
+        font-size: 30px;
+    }

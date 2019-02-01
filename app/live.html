@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>OMCRS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/live.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="view">
+            <div class="logo-container">
+                <img src=""/>
+            </div>
+            <div class="button-container session-identifier">
+                <i class="fa fa-hashtag" id="hashtag" aria-hidden="true"></i>123
+            </div>
+            <div class="button-container nav">
+                <a id="prev-question" href="#" class="not-active">
+                    <i class="fa fa-angle-double-left"></i>
+                </a>
+            </div>
+            <div class="question-container">
+                <div class="question">
+                    <p id="question-text"></p>
+                </div>
+            </div>
+            <div class="button-container nav" >
+                <a id="next-question" href="#" class="not-active">
+                    <i class="fa fa-angle-double-right"></i>
+                </a>
+            </div>
+            <div class="button-container activate">
+                <a id="activate" href="#" class="not-active">
+                    <b>Activate</b>
+                </a>
+                <a id="deactivate" href="#" class="display-none not-active">
+                    <b>Deactivate</b>
+                </a>
+            </div>
+            <div class="button-container icon">
+                <a id="responses" href="#" class="not-active">
+                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="button-container users display-none">
+                <span id="users"></span>
+            </div>
+            <div id="new-question-container" class="button-container icon new-question">
+                <a id="new-question" href="#" class="not-active">
+                    <i class="fa fa-plus"></i>
+                </a>
+            </div>
+            <div id="question-type-container" class="button-container question-type display-none">
+                <select id="question-type">
+                    <option value="mcq_d">MCQ A-D</option>
+                    <option value="mcq_e">MCQ A-E</option>
+                    <option value="mcq_f">MCQ A-F</option>
+                    <option value="mrq_d">MRQ A-D</option>
+                    <option value="mrq_e">MRQ A-E</option>
+                    <option value="mrq_f">MRQ A-F</option>
+                    <option value="text">Text</option>
+                    <option value="textlong">Long Text</option>
+                    <option value="truefalse">True/False</option>
+                    <option value="truefalsedk">True/False/Don't Know</option>
+                </select>
+                <a id="new-question-submit" href="#" class="button-container new-question-submit">
+                    <i class="fa fa-plus-square"></i>
+                </a>
+            </div>
+            <div class="button-container power">
+                <a id="power" href="#">
+                    <i class="fa fa-power-off"></i>
+                </a>
+            </div>
+        </div>
+        <script>
+            require("./js/live.js");
+        </script>
+    </body>
+</html>

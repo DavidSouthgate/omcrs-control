@@ -1,0 +1,11 @@
+{
+  "server": "http://127.0.0.1:4000/",
+  "color": {
+    "primary": "563D7C",
+    "primaryText": "ffffff",
+    "hover": "898888"
+  },
+  "logo": {
+    "wide": "logo-wide.png"
+  }
+}

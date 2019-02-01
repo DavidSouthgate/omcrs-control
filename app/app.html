@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OMCRS</title>
+        <link href="css/app.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="initialLoader">
+            <img id="logo" src="../build/logo.png"/>
+            <div id="spacer1" class="spacer"></div>
+            <div id="title" class="title">
+                OMCRS
+            </div>
+            <div id="subtitle" class="title">
+                One More Class Response System
+            </div>
+            <div id="spacer2" class="spacer"></div>
+            <div id="error"></div>
+        </div>
+        <webview id="webview" preload="js/webview-preload.js"></webview>
+        <script>
+            require("./js/renderer.js");
+        </script>
+    </body>
+</html>
